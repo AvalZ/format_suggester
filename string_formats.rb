@@ -2,10 +2,11 @@
 
 formats = {
     md5: /^[a-f0-9]{32}$/i,
-    sha1: /^[a-f0-9]{40}$/i
+    sha1: /^[a-f0-9]{40}$/i,
+    bcrypt: /^\$2[aby]?\$[0-9]{1,}\$.{22}.{31}$/
 }
 
-input = "5f4dcc3b5aa765d61d8327deb882cf99abcdef12"
+input = ARGV[0]
 
 formats.each do | format, regex |
     puts "String format: #{format}" if input =~ regex 
