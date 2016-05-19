@@ -8,8 +8,8 @@ This tool gives suggestions ordered by relevance, so first results are more like
 
     $> ./string_formats.rb '26dcfc59d137109c34a8992cef3eae2d'
     
-       String format: md5
-       String format: base64
+       Matching format: md5
+       Matching format: base64
 
 Supported formats:
 * MD5
@@ -19,6 +19,7 @@ Supported formats:
 * SHA386
 * SHA512
 * BCrypt ( *2* | *2a* | *2b* | *2y* | *2x (legacy)* formats)
+* PHP Session ID Cookie (*PHPSESSID*) format
 * Base64 ([RFC 4648](https://tools.ietf.org/html/rfc4648#section-4 "Base64 Format"))
 * Base58
 * Base56

@@ -17,10 +17,11 @@ formats = {
     base64: /^([A-Za-z0-9\+\/]{4})*([A-Za-z0-9\/\+]{2}[A-Za-z0-9\/\+=]{2})?$/,
     base56: /^[A-HJ-NP-Za-kmnp-z2-9]*$/,
     base58: /^[A-HJ-NP-Za-km-z1-9]*$/,
+    phpsessid: /^[\-,A-Za-z0-9]{1,128}$/,
 }
 
 input = ARGV[0]
 
 formats.each do | format, regex |
-    puts "String format: #{format}" if input =~ regex 
+    puts "Matching format: #{format}" if input =~ regex 
 end
