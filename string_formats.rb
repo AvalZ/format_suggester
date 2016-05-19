@@ -1,4 +1,10 @@
-#!/usr/bin/ruby
+#!/usr/bin/env ruby
+
+unless ARGV[0] then
+    puts "String format suggester."
+    puts "Usage: #{$0} 'string'"
+    puts "\tNOTE: a string may be interpreted in multiple formats."
+end
 
 formats = {
     md5: /^[a-f0-9]{32}$/i,
