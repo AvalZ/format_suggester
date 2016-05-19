@@ -14,7 +14,7 @@ This tool gives suggestions ordered by relevance, so first results are more like
 Supported formats:
 * MD5
 * SHA1
-* BCrypt ( *$2$* | *$2a$* | *$2b$* | *$2y$* formats)
+* BCrypt ( *2* | *2a* | *2b* | *2y* | *2x (legacy)* formats)
 * Base64 ([RFC 4648](https://tools.ietf.org/html/rfc4648#section-4 "Base64 Format"))
 * Base58
 * Base56
